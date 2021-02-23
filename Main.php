@@ -59,7 +59,7 @@ include('header.php');
                             <h3 class="h2">Welcome To VOS-IMMO.</h3>
                             <p>
                                 VOS-IMMO vous donnez la chance d'achetez ou de louez la maison de vos reves.<a
-                                        class="text-success" href="Property.php" target="_blank">Voir Plus</a>
+                                        class="text-success" href="Property.php" target="_blank">Look For More</a>
                             </p>
                         </div>
                     </div>
@@ -129,17 +129,17 @@ include('header.php');
         <div class="col-12 col-md-4 p-5 mt-3">
             <a href="Property.php?type=1"><img src="./assets/img/Sale.jpg" class="rounded-circle img-fluid border"></a>
             <h5 class="text-center mt-3 mb-3">Sale</h5>
-            <p class="text-center"><a class="btn btn-success">Voir</a></p>
+            <p class="text-center"><a class="btn btn-success" href="Property.php?type=1">Look </a></p>
         </div>
         <div class="col-12 col-md-4 p-5 mt-3">
             <a href="Property.php?type=0"><img src="./assets/img/Rent.jpg" class="rounded-circle img-fluid border"></a>
             <h2 class="h5 text-center mt-3 mb-3">Rent</h2>
-            <p class="text-center"><a class="btn btn-success">Voir</a></p>
+            <p class="text-center"><a class="btn btn-success" href="Property.php?type=10">Look </a></p>
         </div>
         <div class="col-12 col-md-4 p-5 mt-3">
-            <a href="#"><img src="./assets/img/Vacation.jpg" class="rounded-circle img-fluid border"></a>
+            <a href="Property.php?type=2"><img src="./assets/img/Vacation.jpg" class="rounded-circle img-fluid border"></a>
             <h2 class="h5 text-center mt-3 mb-3">Vacation</h2>
-            <p class="text-center"><a class="btn btn-success">Voir</a></p>
+            <p class="text-center"><a class="btn btn-success" href="Property.php?type=2">Look </a></p>
         </div>
     </div>
 </section>
@@ -174,7 +174,7 @@ include('header.php');
                     <img src="./assets/img/agent-5.jpg" class="card-img-top" alt="...">
                     <div class="card-body">
 
-                        <a href="agent-contact.html" class="h2 text-decoration-none text-dark">Sourour Ben</a>
+                        <a href="agent-contact.html" class="h2 text-decoration-none text-dark">Sourour Saied</a>
                         <p class="card-text"><br>
                             <b>Phone: </b>+216 20222125<br>
                             <b>Email: </b>Sourour.Saied@gmail.com

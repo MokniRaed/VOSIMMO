@@ -13,8 +13,10 @@ if (isset($_GET['type'])) {
     } elseif ($_GET['type'] == '1') {
 
         $sql .= " WHERE type = 1  ";
-    }
+    }elseif ($_GET['type'] == '2') {
 
+        $sql .= " WHERE type = 2  ";
+    }
 
 }
 if (isset($_GET['px'])) {
@@ -22,7 +24,7 @@ if (isset($_GET['px'])) {
 
         $sql .= " ORDER BY prix desc ";
 
-    } elseif ($_GET['etat'] == '1') {
+    } elseif ($_GET['px'] == '1') {
 
         $sql .= " ORDER BY prix asc  ";
     }
@@ -33,7 +35,7 @@ if (isset($_GET['etat'])) {
 
         $sql .= " WHERE etat = 0  ";
 
-    } elseif ($_GET['px'] == '1') {
+    } elseif ($_GET['etat'] == '1') {
 
         $sql .= " WHERE etat = 1  ";
     }
@@ -44,7 +46,7 @@ if (isset($_GET['rate'])) {
 
         $sql .= " WHERE rate = 0  ";
 
-    } elseif ($_GET['px'] == '1') {
+    } elseif ($_GET['rate'] == '1') {
 
         $sql .= " WHERE etat = 1  ";
     }

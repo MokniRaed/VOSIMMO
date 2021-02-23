@@ -50,7 +50,7 @@ include('header.php');
                     <ul class="collapse show list-unstyled pl-3">
                         <li><a class="text-decoration-none" href="Property.php?type=1">For Sale</a></li>
                         <li><a class="text-decoration-none" href="Property.php?type=0">For Rent</a></li>
-                        <li><a class="text-decoration-none" href="Property.php?type=0">For Vacation</a></li>
+                        <li><a class="text-decoration-none" href="Property.php?type=2">For Vacation</a></li>
                     </ul>
                 </li>
                 <li class="pb-3">
@@ -85,10 +85,10 @@ include('header.php');
                             <a class="h3 text-dark text-decoration-none mr-3" href="Property.php">All</a>
                         </li>
                         <li class="list-inline-item">
-                            <a class="h3 text-dark text-decoration-none mr-3" href="#">Rent It</a>
+                            <a class="h3 text-dark text-decoration-none mr-3" href="Property.php?type=0">Rent It</a>
                         </li>
                         <li class="list-inline-item">
-                            <a class="h3 text-dark text-decoration-none" href="#">Sale It</a>
+                            <a class="h3 text-dark text-decoration-none" href="Property.php?type=1">Sale It</a>
                         </li>
                     </ul>
                 </div>
