@@ -113,11 +113,11 @@ include('header.php');
             <div class="col-md-4 pt-5">
                 <h2 class="h2 text-light border-bottom pb-3 border-light">Property</h2>
                 <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none" href="#">Luxury Villa</a></li>
-                    <li><a class="text-decoration-none" href="#">House</a></li>
-                    <li><a class="text-decoration-none" href="#">Appartement</a></li>
-                    <li><a class="text-decoration-none" href="#">Bengalos</a></li>
-                    <li><a class="text-decoration-none" href="#">Maison D'Haute</a></li>
+                     <li><a class="text-decoration-none" href="#">Luxury Villa</a></li>
+                     <li><a class="text-decoration-none" href="#">House</a></li>
+                     <li><a class="text-decoration-none" href="#">Apartment</a></li>
+                     <li><a class="text-decoration-none" href="#">Bungalow</a></li>
+                     <li><a class="text-decoration-none" href="#">Guest house</a></li>
 
                 </ul>
             </div>
@@ -125,11 +125,11 @@ include('header.php');
             <div class="col-md-4 pt-5">
                 <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
                 <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none" href="#">Home</a></li>
-                    <li><a class="text-decoration-none" href="#">About Us</a></li>
+                    <li><a class="text-decoration-none" href="Main.php">Home</a></li>
+                    <li><a class="text-decoration-none" href="about.php">About Us</a></li>
                     <li><a class="text-decoration-none" href="#">Agents Locations</a></li>
                     <li><a class="text-decoration-none" href="#">FAQs</a></li>
-                    <li><a class="text-decoration-none" href="#">Contact</a></li>
+                    <li><a class="text-decoration-none" href="contact.php">Contact</a></li>
                 </ul>
             </div>
 
