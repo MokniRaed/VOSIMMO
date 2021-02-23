@@ -113,11 +113,11 @@ include('header.php');
             <div class="col-md-4 pt-5">
                 <h2 class="h2 text-light border-bottom pb-3 border-light">Property</h2>
                 <ul class="list-unstyled text-light footer-link-list">
-                     <li><a class="text-decoration-none" href="#">Luxury Villa</a></li>
-                     <li><a class="text-decoration-none" href="#">House</a></li>
-                     <li><a class="text-decoration-none" href="#">Apartment</a></li>
-                     <li><a class="text-decoration-none" href="#">Bungalow</a></li>
-                     <li><a class="text-decoration-none" href="#">Guest house</a></li>
+                    <li><a class="text-decoration-none" href="#">Luxury Villa</a></li>
+                    <li><a class="text-decoration-none" href="#">House</a></li>
+                    <li><a class="text-decoration-none" href="#">Apartment</a></li>
+                    <li><a class="text-decoration-none" href="#">Bungalow</a></li>
+                    <li><a class="text-decoration-none" href="#">Guest house</a></li>
 
                 </ul>
             </div>

@@ -30,11 +30,12 @@ include('phpConf/db_property.php');
 </head>
 <body>
 <?php
-include ("header.php")
+include("header.php")
 ?>
 
 <!-- Modal -->
-<div class="modal fade bg-white" id="immo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+<div class="modal fade bg-white" id="immo_search" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
+     aria-hidden="true">
     <div class="modal-dialog modal-lg" role="document">
         <div class="w-100 pt-1 mb-5 text-right">
             <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
@@ -51,18 +52,21 @@ include ("header.php")
 </div>
 
 
-
 <section class="bg-success py-5">
     <div class="container">
         <div class="row align-items-center py-5">
             <div class="col-md-8 text-white">
                 <h1>About Us</h1>
-                <p >
-                    vos-immo is a marketplace where sellers can sell property or cater to those wish to rent a house. We know that renting and selling property
-                    is not easy. So, this platform is made to ensure that verified listings attract genuine buyers and customers. Partner with vos-immo, post
-                    property for sale or post rent ad for free and enjoy the benefits of partnering with us. We help you find joy and more.
-                    vos-immo is the most preferred property website among buyers. When you join us, you get connected with only genuine buyers. Start today.
-                     </p>
+                <p>
+                    vos-immo is a marketplace where sellers can sell property or cater to those wish to rent a house. We
+                    know that renting and selling property
+                    is not easy. So, this platform is made to ensure that verified listings attract genuine buyers and
+                    customers. Partner with vos-immo, post
+                    property for sale or post rent ad for free and enjoy the benefits of partnering with us. We help you
+                    find joy and more.
+                    vos-immo is the most preferred property website among buyers. When you join us, you get connected
+                    with only genuine buyers. Start today.
+                </p>
             </div>
             <div class="col-md-4">
                 <img src="assets/img/about.png" alt="About Hero">
@@ -77,15 +81,19 @@ include ("header.php")
     <div class="row text-center pt-5 pb-3">
         <div class="col-lg-6 m-auto service_parg">
             <h1 class="h1">Our Services</h1>
-            <p >
-                vos-immo is a marketplace where sellers can sell property to those wish to rent a house. We know that buying and selling property
-                is not easy. So, this platform is made to ensure that verified listings attract genuine buyers and customers. Partner with Makaan.com,
-                post property for sale or post rent ad for free and enjoy the benefits of partnering with us. We help you find joy and more.
-                vos-immo is the most preferred property website among buyers. When you join us, you get connected with only genuine buyers. Start today.
+            <p>
+                vos-immo is a marketplace where sellers can sell property to those wish to rent a house. We know that
+                buying and selling property
+                is not easy. So, this platform is made to ensure that verified listings attract genuine buyers and
+                customers. Partner with Makaan.com,
+                post property for sale or post rent ad for free and enjoy the benefits of partnering with us. We help
+                you find joy and more.
+                vos-immo is the most preferred property website among buyers. When you join us, you get connected with
+                only genuine buyers. Start today.
             </p>
         </div>
     </div>
-    <div  class="row">
+    <div class="row">
 
         <div class="col-md-6 col-lg-4 pb-5">
             <div class="h-100 py-5 services-icon-wap shadow">
@@ -97,14 +105,14 @@ include ("header.php")
         <div class="col-md-6 col-lg-4 pb-5">
             <div class="h-100 py-5 services-icon-wap shadow">
                 <div class="h1 text-success text-center"><i class="fas fa-check-circle fa-2x"></i></div>
-                <h1 class="h5 mt-4 text-center">Pay <p class="mt-3"> as you earn </p> </h1>
+                <h1 class="h5 mt-4 text-center">Pay <p class="mt-3"> as you earn </p></h1>
             </div>
         </div>
 
         <div class="col-md-6 col-lg-4 pb-5">
             <div class="h-100 py-5 services-icon-wap shadow">
                 <div class="h1 text-success text-center"><i class="fa fa-check-circle fa-2x"></i></div>
-                <h1 class="h5 mt-4 text-center">Stand out <p class="mt-3" > amongst peers </p></h1>
+                <h1 class="h5 mt-4 text-center">Stand out <p class="mt-3"> amongst peers </p></h1>
             </div>
         </div>
 
@@ -137,11 +145,11 @@ include ("header.php")
             <div class="col-md-4 pt-5">
                 <h2 class="h2 text-light border-bottom pb-3 border-light">Property</h2>
                 <ul class="list-unstyled text-light footer-link-list">
-                     <li><a class="text-decoration-none" href="#">Luxury Villa</a></li>
-                     <li><a class="text-decoration-none" href="#">House</a></li>
-                     <li><a class="text-decoration-none" href="#">Apartment</a></li>
-                     <li><a class="text-decoration-none" href="#">Bungalow</a></li>
-                     <li><a class="text-decoration-none" href="#">Guest house</a></li>
+                    <li><a class="text-decoration-none" href="#">Luxury Villa</a></li>
+                    <li><a class="text-decoration-none" href="#">House</a></li>
+                    <li><a class="text-decoration-none" href="#">Apartment</a></li>
+                    <li><a class="text-decoration-none" href="#">Bungalow</a></li>
+                    <li><a class="text-decoration-none" href="#">Guest house</a></li>
 
                 </ul>
             </div>
