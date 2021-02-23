@@ -69,7 +69,7 @@ include("header.php")
                 </p>
             </div>
             <div class="col-md-4">
-                <img src="assets/img/about.png" width="600" alt="About Hero">
+                <img src="assets/img/about.png" alt="About Hero">
             </div>
         </div>
     </div>
