@@ -1,12 +1,12 @@
 <?php
 include('phpConf/session.php');
-
+include('phpConf/db_property.php');
 ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>VOS-IMMO</title>
+    <title>Property</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 
@@ -28,178 +28,157 @@ include('phpConf/session.php');
     <script src="assets/js/bootstrap.bundle.min.js"></script>
     <script src="assets/js/immo.js?v=2"></script>
 
-
 </head>
 
 <body>
 <?php
 include('header.php');
 ?>
-<!--Search-Modal-->
 
+<!-- Content -->
+<div class="container py-5">
+    <div class="row">
 
-<!-- banners -->
+        <div class="col-lg-3">
+            <h1 class="h2 pb-4">Categories</h1>
+            <ul class="list-unstyled immo-accordion">
+                <li class="pb-3">
+                    <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                        Type
+                        <i class="fa fa-fw fa-chevron-circle-down mt-1"></i>
+                    </a>
+                    <ul class="collapse show list-unstyled pl-3">
+                        <li><a class="text-decoration-none" href="Property.php?type=1">For Sale</a></li>
+                        <li><a class="text-decoration-none" href="Property.php?type=0">For Rent</a></li>
+                        <li><a class="text-decoration-none" href="Property.php?type=0">For Vacation</a></li>
+                    </ul>
+                </li>
+                <li class="pb-3">
+                    <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                        Pricing
+                        <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
+                    </a>
+                    <ul id="collapseTwo" class="collapse list-unstyled pl-3">
+                        <li><a class="text-decoration-none" href="Property.php?px=0">Higher</a></li>
+                        <li><a class="text-decoration-none" href="Property.php?px=1">Lower</a></li>
+                    </ul>
+                </li>
+                <li class="pb-3">
+                    <a class="collapsed d-flex justify-content-between h3 text-decoration-none" href="#">
+                        New/Old
+                        <i class="pull-right fa fa-fw fa-chevron-circle-down mt-1"></i>
+                    </a>
+                    <ul id="collapseThree" class="collapse list-unstyled pl-3">
+                        <li><a class="text-decoration-none" href="Property.php?etat=1">New</a></li>
+                        <li><a class="text-decoration-none" href="Property.php?etat=0">Old</a></li>
 
-<div id="immo-carousel" class="carousel slide" data-bs-ride="carousel">
-    <ol class="carousel-indicators">
-        <li data-bs-target="#immo-carousel" data-bs-slide-to="0" class="active"></li>
-        <li data-bs-target="#immo-carousel" data-bs-slide-to="1"></li>
-        <li data-bs-target="#immo-carousel" data-bs-slide-to="2"></li>
-    </ol>
-    <div class="carousel-inner">
-        <div class="carousel-item active">
-            <div class="container">
-                <div class="row p-5">
-                    <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                        <img class="img-fluid" src="./assets/img/banner_img_01.jpg" alt="First slide">
-                    </div>
-                    <div class="col-lg-6 mb-0 d-flex align-items-center">
-                        <div class="text-align-left align-self-center">
-                            <h1 class="h1 text-success"><b>Trouvez La Maison De Vos Reves</b></h1>
-                            <h3 class="h2">Welcome To VOS-IMMO.</h3>
-                            <p>
-                                VOS-IMMO vous donnez la chance d'achetez ou de louez la maison de vos reves.<a
-                                        class="text-success" href="Property.php" target="_blank">Voir Plus</a>
-                            </p>
-                        </div>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+
+        <div class="col-lg-9">
+            <div class="row">
+                <div class="col-md-6">
+                    <ul class="list-inline property-top-menu pb-3 pt-1">
+                        <li class="list-inline-item">
+                            <a class="h3 text-dark text-decoration-none mr-3" href="Property.php">All</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="h3 text-dark text-decoration-none mr-3" href="#">Rent It</a>
+                        </li>
+                        <li class="list-inline-item">
+                            <a class="h3 text-dark text-decoration-none" href="#">Sale It</a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="col-md-6 pb-4">
+                    <div class="d-flex">
+                        <select class="form-control">
+                            <option>Featured</option>
+                            <option>Low to High</option>
+                        </select>
                     </div>
                 </div>
             </div>
-        </div>
-        <div class="carousel-item">
-            <div class="container">
-                <div class="row p-5">
-                    <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                        <img class="img-fluid" src="./assets/img/banner_img_02.jpg" alt="Second slide">
-                    </div>
-                    <div class="col-lg-6 mb-0 d-flex align-items-center">
-                        <div class="text-align-left">
-                            <h1 class="h1">Exactly What You Need</h1>
-                            <h3 class="h2">You Will Find What You Need And More! </h3>
-                            <p>
-                                With Us
-                                You <strong>DREAMS</strong> Comes True!
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="carousel-item">
-            <div class="container">
-                <div class="row p-5">
-                    <div class="mx-auto col-md-8 col-lg-6 order-lg-last">
-                        <img class="img-fluid" src="./assets/img/banner_img_03.jpg" alt="Third slide">
-                    </div>
-                    <div class="col-lg-6 mb-0 d-flex align-items-center">
-                        <div class="text-align-left">
-                            <h1 class="h1">Even The Villa's </h1>
-                            <h3 class="h2">Only In VO-IMMO </h3>
-                            <p>
-                                We Bring To Your Alot Of Choces.
+            <div class="row">
+                <?php
+                if ($result->num_rows > 0) {
+                    // output data of each row
+                    while ($row = $result->fetch_assoc()) {
 
-                            </p>
+                        echo "<div class=\"col-md-4\">
+                    <div class=\"card mb-4 property-wap rounded-0\">
+                        <div class=\"card rounded-0\">
+                            <img class=\"card-img rounded-0 img-fluid\" src=\"assets/img/" . $row['img'] . ".jpg\">
+                            <div class=\"card-img-overlay rounded-0 property-overlay d-flex align-items-center justify-content-center\">
+                                <ul class=\"list-unstyled\">
+                                    <li><a class=\"btn btn-success text-white\" href=\"property-single.php\"><i
+                                                    class=\"far fa-heart\"></i></a></li>
+                                    <li><a class=\"btn btn-success text-white mt-2\" href=\"property-single.php\"><i
+                                                    class=\"far fa-eye\"></i></a></li>
+
+                                </ul>
+                            </div>
+                        </div>
+                        <div class=\"card-body\">
+                            <a href=\"property-single.php\" class=\"h3 text-decoration-none\">" . $row['location'] . "</a>
+                            <ul class=\"w-100 list-unstyled d-flex justify-content-between mb-0\">";
+                        if ($row['type'] == 1) {
+                            echo "<li>Sale</li>";
+                        } else {
+                            echo "<li>Rent</li>";
+                        }
+
+                        echo "
+                                <li class=\"pt-2\">
+                                    <span class=\"property-color-dot color-dot-red float-left rounded-circle ml-1\"></span>
+                                    <span class=\"property-color-dot color-dot-blue float-left rounded-circle ml-1\"></span>
+                                    <span class=\"property-color-dot color-dot-black float-left rounded-circle ml-1\"></span>
+                                    <span class=\"property-color-dot color-dot-light float-left rounded-circle ml-1\"></span>
+                                    <span class=\"property-color-dot color-dot-green float-left rounded-circle ml-1\"></span>
+                                </li>
+                            </ul>
+                            <ul class=\"list-unstyled d-flex justify-content-center mb-1\">
+                                <li>";
+                        for ($i = 0; $i < ($row['rate']); $i++) {
+                            echo "
+                                    <i class=\"text-warning fa fa-star\"></i>";
+                        }
+                        "</li>
+                            </ul>";
+
+                        echo "<p class=\"text-center mb-0\">" . $row['prix'] . " DT </p>";
+
+                        echo "
                         </div>
                     </div>
-                </div>
+                </div>";
+                    }
+                }
+                ?>
+            </div>
+            <div div="row">
+                <ul class="pagination pagination-lg justify-content-end">
+                    <li class="page-item disabled">
+                        <a class="page-link active rounded-0 mr-3 shadow-sm border-top-0 border-left-0" href="#"
+                           tabindex="-1">1</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link rounded-0 mr-3 shadow-sm border-top-0 border-left-0 text-dark"
+                           href="#">2</a>
+                    </li>
+                    <li class="page-item">
+                        <a class="page-link rounded-0 shadow-sm border-top-0 border-left-0 text-dark" href="#">3</a>
+                    </li>
+                </ul>
             </div>
         </div>
+
     </div>
-    <a class="carousel-control-prev text-decoration-none w-auto ps-3" href="#immo-carousel" role="button"
-       data-bs-slide="prev">
-        <i class="fas fa-chevron-left"></i>
-    </a>
-    <a class="carousel-control-next text-decoration-none w-auto pe-3" href="#immo-carousel" role="button"
-       data-bs-slide="next">
-        <i class="fas fa-chevron-right"></i>
-    </a>
 </div>
 
-<!-- Categories -->
-<section class="container py-5">
-    <div class="row text-center pt-3">
-        <div class="col-lg-6 m-auto">
-            <h1 class="h1">Categories</h1>
-            <p>
-                Find What You Need.
-            </p>
-        </div>
-    </div>
-    <div class="row">
-        <div class="col-12 col-md-4 p-5 mt-3">
-            <a href="Property.php?type=1"><img src="./assets/img/Sale.jpg" class="rounded-circle img-fluid border"></a>
-            <h5 class="text-center mt-3 mb-3">Sale</h5>
-            <p class="text-center"><a class="btn btn-success">Voir</a></p>
-        </div>
-        <div class="col-12 col-md-4 p-5 mt-3">
-            <a href="Property.php?type=0"><img src="./assets/img/Rent.jpg" class="rounded-circle img-fluid border"></a>
-            <h2 class="h5 text-center mt-3 mb-3">Rent</h2>
-            <p class="text-center"><a class="btn btn-success">Voir</a></p>
-        </div>
-        <div class="col-12 col-md-4 p-5 mt-3">
-            <a href="#"><img src="./assets/img/Vacation.jpg" class="rounded-circle img-fluid border"></a>
-            <h2 class="h5 text-center mt-3 mb-3">Vacation</h2>
-            <p class="text-center"><a class="btn btn-success">Voir</a></p>
-        </div>
-    </div>
-</section>
-<!-- Brockers -->
-<section class="bg-light">
-    <div class="container py-5">
-        <div class="row text-center py-3">
-            <div class="col-lg-6 m-auto">
-                <h1 class="h1">AGENTS</h1>
-                <p>
-                    Best Agents To Contact.
-                </p>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-12 col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="./assets/img/agent-2.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-
-                        <a href="agent-contact.html" class="h2 text-decoration-none text-dark">Raed Mokni</a>
-                        <p class="card-text"><br>
-                            <b>Phone: </b>+216 20222125<br>
-                            <b>Email: </b>Raed.Mokni@gmail.com
-                        </p>
-                        <a href="agent-contact.html" class="text-muted">Contact</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="./assets/img/agent-5.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-
-                        <a href="agent-contact.html" class="h2 text-decoration-none text-dark">Sourour Ben</a>
-                        <p class="card-text"><br>
-                            <b>Phone: </b>+216 20222125<br>
-                            <b>Email: </b>Sourour.Saied@gmail.com
-                        </p>
-                        <a href="agent-contact.html" class="text-muted">Contact</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-12 col-md-4 mb-4">
-                <div class="card h-100">
-                    <img src="./assets/img/agent-3.jpg" class="card-img-top" alt="...">
-                    <div class="card-body">
-
-                        <a href="agent-contact.html" class="h2 text-decoration-none text-dark">Ahmed Najar</a>
-                        <p class="card-text"><br>
-                            <b>Phone: </b>+216 20222125<br>
-                            <b>Email: </b>NajarAhmed@gmail.com
-                        </p>
-                        <a href="agent-contact.html" class="text-muted">Contact</a>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</section>
+<!-- End Content -->
 <!--Footer-->
 <footer class="bg-dark" id="immo_footer">
     <div class="container">
@@ -228,9 +207,9 @@ include('header.php');
                 <ul class="list-unstyled text-light footer-link-list">
                     <li><a class="text-decoration-none" href="#">Luxury Villa</a></li>
                     <li><a class="text-decoration-none" href="#">House</a></li>
-                    <li><a class="text-decoration-none" href="#">Appartement</a></li>
-                    <li><a class="text-decoration-none" href="#">Bengalos</a></li>
-                    <li><a class="text-decoration-none" href="#">Maison D'Haute</a></li>
+                    <li><a class="text-decoration-none" href="#">Apartment</a></li>
+                    <li><a class="text-decoration-none" href="#">Bungalow</a></li>
+                    <li><a class="text-decoration-none" href="#">Guest house</a></li>
 
                 </ul>
             </div>
@@ -238,11 +217,11 @@ include('header.php');
             <div class="col-md-4 pt-5">
                 <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
                 <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none" href="#">Home</a></li>
-                    <li><a class="text-decoration-none" href="#">About Us</a></li>
+                    <li><a class="text-decoration-none" href="Main.php">Home</a></li>
+                    <li><a class="text-decoration-none" href="about.php">About Us</a></li>
                     <li><a class="text-decoration-none" href="#">Agents Locations</a></li>
                     <li><a class="text-decoration-none" href="#">FAQs</a></li>
-                    <li><a class="text-decoration-none" href="#">Contact</a></li>
+                    <li><a class="text-decoration-none" href="contact.php">Contact</a></li>
                 </ul>
             </div>
 
@@ -298,5 +277,6 @@ include('header.php');
     </div>
 
 </footer>
+
 </body>
 </html>
