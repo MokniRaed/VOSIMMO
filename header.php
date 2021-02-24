@@ -1,4 +1,8 @@
 <!--Top_Nav-->
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
+<link rel="stylesheet" href="assets/css/fontawesome.min.css">
 <nav class="navbar navbar-expand-lg bg-dark navbar-light d-none d-lg-block" id="immo_nav_top">
     <div class="container text-light">
         <div class="w-100 d-flex justify-content-between">
@@ -56,19 +60,22 @@
                 </ul>
             </div>
             <div class="navbar align-self-center ">
-                <div style="position: relative; ">
+                <div style="; display: flex;flex-direction: column; ">
+
                     <?php
                     if (isset($_SESSION["login_user"])) {
                         ?>
-                        <a class="btn btn-success compte-log" href="phpConf/logout.php" logout_btn
-                           style="color: white; "
-                        >Logout</a>
+                        <button
+                        <span class=" dropdown-toggle badge  text-light btn  btn-success " data-bs-toggle="dropdown"
+                              aria-expanded="false"><?php echo $_SESSION['login_user']; ?></span>
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end">
 
-                        <a class="nav-icon  text-decoration-none" href="#">
-                            <i class="fa fa-fw fa-user text-dark mr-3"></i>
-                            <span class="position-absolute top-0 left-100 translate-middle badge rounded-pill bg-light text-dark"><?php echo $_SESSION['login_user']; ?></span>
-                        </a>
+                            <li><a class="dropdown-item btn btn-success  " href="phpConf/logout.php" logout_btn
+                                   style="color: white; "
+                                >Logout</a></li>
 
+                        </ul>
                         <?php
                     } else { ?>
                         <a class="btn btn-success compte-log" login_btn style="color: white;"
@@ -76,6 +83,7 @@
                         <?php
                     }
                     ?>
+
                 </div>
             </div>
         </div>

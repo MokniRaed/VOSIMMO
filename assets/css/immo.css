@@ -31,6 +31,7 @@ div {
 .logo {
     font-weight: 500 !important;
 }
+
 .compte-log {
     margin-right: 10px;
     color: white;
@@ -213,7 +214,7 @@ div {
     background: #11698e;
 }
 
-.service_parg{
+.service_parg {
     width: 100%;
 }
 

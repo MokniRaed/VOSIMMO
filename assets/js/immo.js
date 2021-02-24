@@ -45,11 +45,4 @@ $(document).ready(function() {
       $(this).addClass('btn-secondary');
       return false;
     });
-
-
-
-
-
-
-
 });

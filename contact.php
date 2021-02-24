@@ -27,7 +27,6 @@ include('phpConf/session.php');
           crossorigin=""/>
     <!--END fonts style -->
 
-
 </head>
 
 <body>

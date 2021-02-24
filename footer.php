@@ -24,11 +24,11 @@
             <div class="col-md-4 pt-5">
                 <h2 class="h2 text-light border-bottom pb-3 border-light">Property</h2>
                 <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none" href="#">Luxury Villa</a></li>
-                    <li><a class="text-decoration-none" href="#">House</a></li>
-                    <li><a class="text-decoration-none" href="#">Apartment</a></li>
-                    <li><a class="text-decoration-none" href="#">Bungalow</a></li>
-                    <li><a class="text-decoration-none" href="#">Guest house</a></li>
+                    <li><a class="text-decoration-none" href="Property.php">Luxury Villa</a></li>
+                    <li><a class="text-decoration-none" href="Property.php">House</a></li>
+                    <li><a class="text-decoration-none" href="Property.php">Apartment</a></li>
+                    <li><a class="text-decoration-none" href="Property.php">Bungalow</a></li>
+                    <li><a class="text-decoration-none" href="Property.php">Guest house</a></li>
 
                 </ul>
             </div>
@@ -38,7 +38,7 @@
                 <ul class="list-unstyled text-light footer-link-list">
                     <li><a class="text-decoration-none" href="Main.php">Home</a></li>
                     <li><a class="text-decoration-none" href="about.php">About Us</a></li>
-                    <li><a class="text-decoration-none" href="contact.php#mapid">Agents Locations</a></li>
+                    <li><a class="text-decoration-none" href="contact.php#mapid">Locations</a></li>
                     <li><a class="text-decoration-none" href="contact.php">FAQs</a></li>
                     <li><a class="text-decoration-none" href="contact.php">Contact</a></li>
                 </ul>
