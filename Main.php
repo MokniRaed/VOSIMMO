@@ -50,11 +50,11 @@ include('header.php');
                     </div>
                     <div class="col-lg-6 mb-0 d-flex align-items-center">
                         <div class="text-align-left align-self-center">
-                            <h1 class="h1 text-success"><b>Trouvez La Maison De Vos Reves</b></h1>
+                            <h1 class="h1 text-success"><b>Find Your Dream House</b></h1>
                             <h3 class="h2">Welcome To VOS-IMMO.</h3>
                             <p>
-                                VOS-IMMO vous donnez la chance d'achetez ou de louez la maison de vos reves.<a
-                                        class="text-success" href="Property.php" target="_blank">Look For More</a>
+                                VOS-IMMO give you the chance to Buy or Rent Your Dream House.<a
+                                        class="text-success" href="Property.php" target="_blank"><br>Take Look </a>
                             </p>
                         </div>
                     </div>
@@ -91,7 +91,7 @@ include('header.php');
                             <h1 class="h1">Even The Villa's </h1>
                             <h3 class="h2">Only In VO-IMMO </h3>
                             <p>
-                                We Bring To Your Alot Of Choces.
+                                We Brings To You Lot Of Choices.
 
                             </p>
                         </div>
@@ -197,103 +197,12 @@ include('header.php');
 </section>
 
 <!--Footer-->
-<footer class="bg-dark" id="immo_footer">
-    <div class="container">
-        <div class="row">
 
-            <div class="col-md-4 pt-5">
-                <h2 class="h2 text-success border-bottom pb-3 border-light logo">VOS-IMMO</h2>
-                <ul class="list-unstyled text-light footer-link-list">
-                    <li>
-                        <i class="fas fa-map-marker-alt fa-fw"></i>
-                        8050 Mrezgua,Nabeul
-                    </li>
-                    <li>
-                        <i class="fa fa-phone fa-fw"></i>
-                        <a class="text-decoration-none" href="tel:+21653331981">+216 53 331 981 </a>
-                    </li>
-                    <li>
-                        <i class="fa fa-envelope fa-fw"></i>
-                        <a class="text-decoration-none" href="mailto:info@vos-immo.com">info@vos-immo.com</a>
-                    </li>
-                </ul>
-            </div>
+<?php
+include('footer.php');
+?>
 
-            <div class="col-md-4 pt-5">
-                <h2 class="h2 text-light border-bottom pb-3 border-light">Property</h2>
-                <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none" href="#">Luxury Villa</a></li>
-                    <li><a class="text-decoration-none" href="#">House</a></li>
-                    <li><a class="text-decoration-none" href="#">Apartment</a></li>
-                    <li><a class="text-decoration-none" href="#">Bungalow</a></li>
-                    <li><a class="text-decoration-none" href="#">Guest house</a></li>
-
-                </ul>
-            </div>
-
-            <div class="col-md-4 pt-5">
-                <h2 class="h2 text-light border-bottom pb-3 border-light">Further Info</h2>
-                <ul class="list-unstyled text-light footer-link-list">
-                    <li><a class="text-decoration-none" href="Main.php">Home</a></li>
-                    <li><a class="text-decoration-none" href="about.php">About Us</a></li>
-                    <li><a class="text-decoration-none" href="#">Agents Locations</a></li>
-                    <li><a class="text-decoration-none" href="#">FAQs</a></li>
-                    <li><a class="text-decoration-none" href="contact.php">Contact</a></li>
-                </ul>
-            </div>
-
-        </div>
-
-        <div class="row text-light mb-4">
-            <div class="col-12 mb-3">
-                <div class="w-100 my-3 border-top border-light"></div>
-            </div>
-            <div class="col-auto me-auto">
-                <ul class="list-inline text-left footer-icons">
-                    <li class="list-inline-item border border-light rounded-circle text-center">
-                        <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i
-                                    class="fab fa-facebook-f fa-lg fa-fw"></i></a>
-                    </li>
-                    <li class="list-inline-item border border-light rounded-circle text-center">
-                        <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i
-                                    class="fab fa-instagram fa-lg fa-fw"></i></a>
-                    </li>
-                    <li class="list-inline-item border border-light rounded-circle text-center">
-                        <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i
-                                    class="fab fa-twitter fa-lg fa-fw"></i></a>
-                    </li>
-                    <li class="list-inline-item border border-light rounded-circle text-center">
-                        <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i
-                                    class="fab fa-linkedin fa-lg fa-fw"></i></a>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-auto">
-                <label class="sr-only" for="subscribeEmail">Email address</label>
-                <div class="input-group mb-2">
-                    <input type="text" class="form-control bg-dark border-light" id="subscribeEmail"
-                           placeholder="Email address">
-                    <div class="input-group-text btn-success text-light"><a class="text-decoration-none" onclick="">
-                            Subscribe</a></div>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <div class="w-100 bg-black py-3">
-        <div class="container">
-            <div class="row pt-2">
-                <div class="col-12">
-                    <p class="text-left text-light">
-                        Copyright &copy; 2021 VOS-IMMO
-                        | Designed by <a rel="sponsored" href="https://fb.com/mokniraed" target="_blank">Mokni Raed</a>
-                    </p>
-                </div>
-            </div>
-        </div>
-    </div>
-
-</footer>
+<!--End Footer-->
 
 <!-- Start Script -->
 <script src="assets/js/jquery-1.11.0.min.js"></script>
