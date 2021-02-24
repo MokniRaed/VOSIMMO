@@ -8,7 +8,6 @@ if(isset($_SESSION['login_user'])) {
 
     $row = mysqli_fetch_array($ses_sql, MYSQLI_ASSOC);
 
-    $row = mysqli_fetch_array($ses_sql, MYSQLI_ASSOC);
 }
 
 

@@ -13,8 +13,8 @@ $sql = "INSERT INTO msg (name_s, email, subject, message)
 VALUES ('$name','$email','$subject','$message')";
 
 if (mysqli_query($conn, $sql)) {
-    $message = "Thankyou for your comment.";
-    echo "<script type='text/javascript'>alert('$message');
+    $thanks_message = "Thankyou for your comment.";
+    echo "<script type='text/javascript'>alert('$thanks_message');
 window.location = '../contact.php'</script>";
 
 

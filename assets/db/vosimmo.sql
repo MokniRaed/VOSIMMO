@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1:3306
--- Generation Time: Feb 22, 2021 at 06:12 PM
+-- Generation Time: Feb 23, 2021 at 08:38 PM
 -- Server version: 8.0.18
 -- PHP Version: 7.4.0
 
@@ -50,34 +50,15 @@ CREATE TABLE IF NOT EXISTS `msg` (
   `message` varchar(100) NOT NULL,
   `id` int(11) NOT NULL AUTO_INCREMENT,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=22 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=24 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `msg`
 --
 
 INSERT INTO `msg` (`name_s`, `email`, `subject`, `message`, `id`) VALUES
-('hobba', 'hobba@hobba.com', 'doks', 'kqbjdf mchet XD', 1),
-('hobba', 'hobba@hobba.com', 'doks', 'efses', 2),
-('hobba', 'hobba@hobba.com', 'doks', 'efses', 3),
-('hobba', 'hobba@hobba.com', 'doks', 'efses', 4),
-('dv', 'hobba@hobba.com', 'doks', 'qdvqdv', 5),
-('dv', 'hobba@hobba.com', 'doks', 'qdvqdv', 6),
-('hobba', 'hobba@hobba.com', 'qqs', 'qsdqsd', 7),
-('hobba', 'hobba@hobba.com', 'doks', 'xfbxfb', 8),
-('hobba', 'hobba@hobba.com', 'doks', 'qssc', 9),
-('hobba', 'hobba@hobba.com', 'doks', 'qssc', 10),
-('sdvsdv', 'sdvsdv', 'sdvsdv', 'sdvsdv', 11),
-('hobba', 'hobba@hobba.com', 'doks', 'fxb', 12),
-('hobba', 'hobba@hobba.com', 'doks', 'fxb', 13),
-('hobba', 'hobba@hobba.com', 'doks', 'dfb', 14),
-('hobba', 'hobba@hobba.com', 'doks', 'sef', 15),
-('hobba', 'hobba@hobba.com', 's', 'cssc', 16),
-('hobba', 'hobba@hobba.com', 'doks', 'dddd', 17),
-('cc', 'cc', 'cc', 'cc', 18),
-('cc', 'cc', 'cc', 'cc', 19),
-('cc', 'cc', 'cc', 'cc', 20),
-('hobba', 'd', 'd', 'd', 21);
+('hobba', 'hobba@hobba.com', 'doks', 'jhbl', 23),
+('sourour', 'kjhdblkqsb', 'sdblsdv', 'LBSDLKBSD', 22);
 
 -- --------------------------------------------------------
 
@@ -91,7 +72,7 @@ CREATE TABLE IF NOT EXISTS `property` (
   `img` varchar(100) CHARACTER SET utf8mb4 COLLATE utf8mb4_0900_ai_ci NOT NULL,
   `prix` float NOT NULL,
   `location` varchar(100) NOT NULL,
-  `type` tinyint(1) NOT NULL COMMENT '0:RENT 1:SALE',
+  `type` int(1) NOT NULL COMMENT '0:RENT 1:SALE 2:VACATION',
   `rate` int(5) NOT NULL,
   `etat` tinyint(1) NOT NULL COMMENT '0:Old 1:New',
   PRIMARY KEY (`id`)
@@ -106,7 +87,7 @@ INSERT INTO `property` (`id`, `img`, `prix`, `location`, `type`, `rate`, `etat`)
 (2, 'property-2', 400000, 'Tunis,Lac', 1, 4, 1),
 (3, 'property-3', 100, 'Nabeul, Manzeltmim', 0, 3, 0),
 (4, 'property-4', 320000, 'Tunis,Ariana', 1, 3, 0),
-(5, 'property-5', 500, 'Nabeul, Mrezgua', 0, 4, 1),
+(5, 'property-5', 500, 'Nabeul, Mrezgua', 2, 4, 1),
 (6, 'property-6', 650000, 'Nabeul, Mrezgua', 1, 5, 1),
 (7, 'property-7', 200000, 'Nabeul, Hamamet', 1, 3, 1),
 (8, 'property-8', 320000, 'Nabeul, Hamamet', 1, 3, 0),
@@ -126,14 +107,21 @@ CREATE TABLE IF NOT EXISTS `user` (
   `email` varchar(100) NOT NULL,
   `phone` int(8) NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=MyISAM AUTO_INCREMENT=11 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
+) ENGINE=MyISAM AUTO_INCREMENT=21 DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci;
 
 --
 -- Dumping data for table `user`
 --
 
 INSERT INTO `user` (`id`, `username`, `password`, `email`, `phone`) VALUES
-(1, 'RAED MOKNI', '00000000', 'rooda1998@gmail.com', 53331981);
+(1, 'rooda1998@gmail.com', '00000000', 'rooda1998@gmail.com', 53331981),
+(19, 'RAED MOKNI', '00000000', 'demo@demo.com', 53331981),
+(18, 'sourour', '55555555', 'sousou@gmail.com', 55555555),
+(15, 'sourour', 'sourour', 'skdbkqsb', 61262),
+(16, 'ahmed', 'ahmed', 'uaebfkjqbf', 0),
+(17, 'majda', 'majda', 'sblsbd', 0),
+(13, 'hobba', 'odnllqv', 'oadnond', 0),
+(20, 'Sou', '2222', 'souroursaied@gmail.com', 22222222);
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
