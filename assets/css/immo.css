@@ -31,7 +31,7 @@ div {
 .logo {
     font-weight: 500 !important;
 }
-.compte-log{
+.compte-log {
     margin-right: 10px;
     color: white;
 
@@ -106,7 +106,6 @@ div {
 #immo_main_nav .navbar .nav-icon {
     margin-right: 20px;
 }
-
 
 
 /* Hero Carousel */
@@ -186,7 +185,6 @@ div {
 }
 
 
-
 /* Carousel Hero */
 
 #immo-carousel .carousel-indicators li {
@@ -216,18 +214,23 @@ div {
 }
 
 .service_parg{
-    width:100%;
+    width: 100%;
 }
 
-/* Contact map */
+/* Contact  */
 
-.leaflet-control a,
-.leaflet-control {
-    font-size: 10px !important;
+.contact-form {
+    margin: auto;
 }
 
-.form-control {
-    border: 1px solid #e8e8e8;
+.submit-button {
+    margin-top: 10px;
+}
+
+#mapid {
+    height: 500px;
+    margin-top: 10px;
+    margin-bottom: 10px;
 }
 
 
@@ -265,13 +268,9 @@ div {
     border-color: #f8f1f1 !important;
 }
 
-.contact-box-main .col-md-12{
+.contact-box-main .col-md-12 {
     margin-bottom: 10px;
 }
-
-
-
-
 
 
 /* Small devices (landscape phones, 576px and up)*/
@@ -292,7 +291,8 @@ div {
     .immo-carousel .h1 {
         font-size: 1em !important;
     }
-    .compte-log{
+
+    .compte-log {
         margin-right: 10px;
         margin-left: 10px;
         align-items: center;
@@ -308,7 +308,8 @@ div {
     #immo_main_nav .navbar-nav {
         max-width: 450px;
     }
-    .compte-log{
+
+    .compte-log {
         margin-right: 10px;
         margin-left: 10px;
         align-items: center;
@@ -322,20 +323,24 @@ div {
     #immo_main_nav .navbar-nav {
         max-width: 550px;
     }
+
     #immo-carousel .carousel-item {
         min-height: 30rem !important;
     }
+
     .property-wap .h3,
     .property-wap li,
     .property-wap i,
     .property-wap p {
         font-size: 18px !important;
     }
+
     .property-wap .property-color-dot {
         width: 12px;
         height: 12px;
     }
-    .compte-log{
+
+    .compte-log {
         margin-right: 10px;
         margin-left: 10px;
         align-items: center;
@@ -345,5 +350,6 @@ div {
 
 /* Extra large devices (large desktops, 1200px and up)*/
 
-@media (min-width: 1200px) {}
+@media (min-width: 1200px) {
+}
 
