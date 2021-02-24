@@ -116,11 +116,9 @@ include("header.php")
 <!-- End Section -->
 
 <!--Footer-->
-
 <?php
 include('footer.php');
 ?>
-
 <!--End Footer-->
 
 <!-- Start Script -->
@@ -129,5 +127,7 @@ include('footer.php');
 <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/immo.js?v=2"></script>
+<!-- End Script -->
+
 </body>
 </html>

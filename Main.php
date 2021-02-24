@@ -23,18 +23,14 @@ include('phpConf/session.php');
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
 
 
-
 </head>
 
 <body>
 <?php
 include('header.php');
 ?>
-<!--Search-Modal-->
 
-
-<!-- banners -->
-
+<!-- Banners -->
 <div id="immo-carousel" class="carousel slide" data-bs-ride="carousel">
     <ol class="carousel-indicators">
         <li data-bs-target="#immo-carousel" data-bs-slide-to="0" class="active"></li>
@@ -109,6 +105,7 @@ include('header.php');
         <i class="fas fa-chevron-right"></i>
     </a>
 </div>
+<!--End Banner -->
 
 <!-- Categories -->
 <section class="container py-5">
@@ -138,7 +135,9 @@ include('header.php');
         </div>
     </div>
 </section>
-<!-- Brockers -->
+<!-- End Categories -->
+
+<!-- Brokers -->
 <section class="bg-light">
     <div class="container py-5">
         <div class="row text-center py-3">
@@ -195,13 +194,12 @@ include('header.php');
         </div>
     </div>
 </section>
+<!-- End Brokers -->
 
 <!--Footer-->
-
 <?php
 include('footer.php');
 ?>
-
 <!--End Footer-->
 
 <!-- Start Script -->
@@ -210,6 +208,7 @@ include('footer.php');
 <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/immo.js?v=2"></script>
+<!-- End Script -->
 
 </body>
 </html>

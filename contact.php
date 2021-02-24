@@ -18,7 +18,6 @@ include('phpConf/session.php');
     <!--END Files Links -->
 
     <!--fonts style -->
-
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
@@ -26,7 +25,6 @@ include('phpConf/session.php');
     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.7.1/dist/leaflet.css"
           integrity="sha512-xodZBNTC5n17Xt2atTPuE1HxjVMSvLVW9ocqUKLsCC5CXdbqCmblAshOMAS6/keqq/sMZMZ19scR4PsZChSR7A=="
           crossorigin=""/>
-
     <!--END fonts style -->
 
 
@@ -35,11 +33,9 @@ include('phpConf/session.php');
 <body>
 
 <!--Header-->
-
 <?php
 include('header.php');
 ?>
-
 <!--End Header-->
 
 <!--Contact-->
@@ -93,7 +89,6 @@ include('header.php');
     </div>
 
     <!-- Start Map -->
-
     <div class="col-lg-8 col-sm-12 p-4 contact-form">
         <div id="mapid"></div>
         <script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
@@ -102,11 +97,11 @@ include('header.php');
         <script>
             var mymap = L.map('mapid').setView([36.427486, 10.673263], 14);
             var marker = L.marker([36.427486, 10.673263]).addTo(mymap);
-            marker.bindPopup("<b>VOSIMMO</b> Property Company.").openPopup();
+            marker.bindPopup("<b>VOSIMMO</b><br> Mrezgua , Nabeul 8050").openPopup();
 
             L.tileLayer('https://api.mapbox.com/styles/v1/{id}/tiles/{z}/{x}/{y}?access_token={accessToken}', {
                 attribution: '<a href="Main.php">VOSIMMO</a> &copy;  , For Preperty SALE and RENT',
-                maxZoom: 18,
+                maxZoom: 20,
                 id: 'mapbox/streets-v11',
                 tileSize: 512,
                 zoomOffset: -1,
@@ -114,19 +109,15 @@ include('header.php');
             }).addTo(mymap);
         </script>
     </div>
-
     <!-- Ena Map -->
 
 </div>
-
 <!--End Contact-->
 
 <!--Footer-->
-
 <?php
 include('footer.php');
 ?>
-
 <!--End Footer-->
 
 
@@ -138,5 +129,7 @@ include('footer.php');
 <script src="assets/js/jquery-migrate-1.2.1.min.js"></script>
 <script src="assets/js/bootstrap.bundle.min.js"></script>
 <script src="assets/js/immo.js"></script>
+<!-- End Script -->
+
 </body>
 </html>

@@ -1,3 +1,4 @@
+<!--Start Footer-->
 <footer class="bg-dark" id="immo_footer">
     <div class="container">
         <div class="row">
@@ -53,19 +54,19 @@
                 <ul class="list-inline text-left footer-icons">
                     <li class="list-inline-item border border-light rounded-circle text-center">
                         <a class="text-light text-decoration-none" target="_blank" href="http://facebook.com/"><i
-                                class="fab fa-facebook-f fa-lg fa-fw"></i></a>
+                                    class="fab fa-facebook-f fa-lg fa-fw"></i></a>
                     </li>
                     <li class="list-inline-item border border-light rounded-circle text-center">
                         <a class="text-light text-decoration-none" target="_blank" href="https://www.instagram.com/"><i
-                                class="fab fa-instagram fa-lg fa-fw"></i></a>
+                                    class="fab fa-instagram fa-lg fa-fw"></i></a>
                     </li>
                     <li class="list-inline-item border border-light rounded-circle text-center">
                         <a class="text-light text-decoration-none" target="_blank" href="https://twitter.com/"><i
-                                class="fab fa-twitter fa-lg fa-fw"></i></a>
+                                    class="fab fa-twitter fa-lg fa-fw"></i></a>
                     </li>
                     <li class="list-inline-item border border-light rounded-circle text-center">
                         <a class="text-light text-decoration-none" target="_blank" href="https://www.linkedin.com/"><i
-                                class="fab fa-linkedin fa-lg fa-fw"></i></a>
+                                    class="fab fa-linkedin fa-lg fa-fw"></i></a>
                     </li>
                 </ul>
             </div>
@@ -87,7 +88,8 @@
                 <div class="col-12">
                     <p class="text-left text-light">
                         Copyright &copy; 2021 VOS-IMMO
-                        | Designed by <a rel="sponsored" href="https://fb.com/mokniraed" target="_blank">Mokni Raed</a>
+                        | Designed by <a rel="sponsored" href="https://fb.com/Mokni.Raed.1" target="_blank">Mokni
+                            Raed</a>
                     </p>
                 </div>
             </div>
@@ -95,3 +97,4 @@
     </div>
 
 </footer>
+<!-- End Footer-->

@@ -22,26 +22,23 @@ if (isset($_SESSION['login_user'])) {
     <link rel="stylesheet" href="assets/css/immo.css">
     <!--fonts style -->
     <link rel="preconnect" href="https://fonts.gstatic.com">
-
     <link rel="stylesheet"
           href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;200;300;400;500;700;900&display=swap">
     <link rel="stylesheet" href="assets/css/fontawesome.min.css">
-
+    <!--End fonts  -->
 
     <title>Login</title>
 </head>
 <body>
 
 <!--Header-->
-
 <?php
 include('header.php');
 ?>
+<!--End Header-->
 
-<!--And Header-->
 
-
-<!-- Compte -->
+<!-- Compete -->
 <div class="d-flex justify-content-center align-items-center mt-5">
     <div class="card">
         <ul class="nav nav-pills mb-3" id="pills-tab" role="tablist">
@@ -84,15 +81,12 @@ include('header.php');
         </div>
     </div>
 </div>
-
 <!-- End Compete -->
 
 <!--Footer-->
-
 <?php
 include('footer.php');
 ?>
-
 <!--End Footer-->
 
 </body>
