@@ -75,6 +75,10 @@ div {
     background-color: #11698e !important;
     border-color: #11698e !important;
 }
+.btn-dark {
+    background-color: #19456b !important;
+    border-color: #19456b !important;
+}
 .btn-self-center{
 
 }
@@ -272,6 +276,10 @@ div {
 
 .contact-box-main .col-md-12 {
     margin-bottom: 10px;
+}
+footer.copyright-footer {
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
 }
 
 

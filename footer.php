@@ -1,5 +1,5 @@
 <!--Start Footer-->
-<footer class="bg-dark" id="immo_footer">
+<footer class="bg-success" id="immo_footer">
     <div class="container">
         <div class="row">
 
@@ -70,23 +70,23 @@
                     </li>
                 </ul>
             </div>
-            <div class="col-auto">
+            <div class="col-auto b">
                 <label class="sr-only" for="subscribeEmail">Email address</label>
                 <div class="input-group mb-2">
-                    <input type="text" class="form-control bg-dark border-light" id="subscribeEmail"
+                    <input type="text" class="form-control bg-success text-light border-light" id="subscribeEmail"
                            placeholder="Email address">
-                    <div class="input-group-text btn-success text-light"><a class="text-decoration-none" onclick="">
+                    <div class="input-group-text btn-dark  text-light"><a class="text-decoration-none" onclick="">
                             Subscribe</a></div>
                 </div>
             </div>
         </div>
     </div>
 
-    <div class="w-100 bg-black py-3">
+    <div class="w-100 bg-dark py-3">
         <div class="container">
             <div class="row pt-2">
-                <div class="col-12">
-                    <p class="text-left text-light">
+                <div class="copyright-footer">
+                    <p class="text-light">
                         Copyright &copy; 2021 VOS-IMMO
                         | Designed by <a rel="sponsored" href="https://fb.com/Mokni.Raed.1" target="_blank">Mokni
                             Raed</a>
