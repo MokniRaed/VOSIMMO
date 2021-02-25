@@ -112,7 +112,6 @@ include('header.php');
                                                     class=\"far fa-heart\"></i></a></li>
                                     <li><a class=\"btn btn-success text-white mt-2\" href=\"property-single.php\"><i
                                                     class=\"far fa-eye\"></i></a></li>
-
                                 </ul>
                             </div>
                         </div>

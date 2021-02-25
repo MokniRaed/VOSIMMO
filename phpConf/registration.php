@@ -31,7 +31,4 @@ VALUES ('$user','$user_pass','$user_mail','$user_phone')";
 
 }
 
-
-
-
 ?>
