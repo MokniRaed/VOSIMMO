@@ -74,7 +74,8 @@
                             </button>
                             <div class="dropdown-menu ">
                                 <p class="text-center">
-                                    <button class=" btn btn-outline-danger  " href="phpConf/logout.php"
+                                    <button class=" btn btn-outline-danger"
+                                            onclick="window.location.href='phpConf/logout.php'"
                                     >Logout
                                     </button>
                                 </p>
