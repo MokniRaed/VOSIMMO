@@ -65,20 +65,26 @@
                     <?php
                     if (isset($_SESSION["login_user"])) {
                         ?>
-                        <button
-                        <span class=" dropdown-toggle badge  text-light btn  btn-success " data-bs-toggle="dropdown"
-                              aria-expanded="false"><?php echo $_SESSION['login_user']; ?></span>
-                        </button>
-                        <ul class="dropdown-menu dropdown-menu-end">
+                        <div class="btn-group">
+                            <button class="btn btn-secondary btn-sm dropdown-toggle text-light btn-success"
+                                    type="button"
+                                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i class=" fa fa-fw fa-user "></i>
+                                <?php echo $_SESSION['login_user']; ?>
+                            </button>
+                            <div class="dropdown-menu ">
+                                <p class="text-center">
+                                    <button class=" btn btn-outline-danger  " href="phpConf/logout.php"
+                                    >Logout
+                                    </button>
+                                </p>
 
-                            <li><a class="dropdown-item btn btn-success  " href="phpConf/logout.php" logout_btn
-                                   style="color: white; "
-                                >Logout</a></li>
 
-                        </ul>
+                            </div>
+                        </div>
                         <?php
                     } else { ?>
-                        <a class="btn btn-success compte-log" login_btn style="color: white;"
+                        <a class="btn btn-success text-light "
                            href="Compte.php">Login</a>
                         <?php
                     }
