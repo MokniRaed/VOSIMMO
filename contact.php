@@ -121,14 +121,7 @@ include('footer.php');
 <!--End Footer-->
 
 
-<!-- Start Script -->
-<script src="https://unpkg.com/leaflet@1.7.1/dist/leaflet.js"
-        integrity="sha512-XQoYMqMTK8LvdxXYG3nZ448hOEQiglfqkJs1NOQV44cWnUrBc8PkAOcXy20w0vlaXaVUearIOBhiXZ5V3ynxwA=="
-        crossorigin=""></script>
-
-<script src='https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha1/dist/js/bootstrap.bundle.min.js'></script>
-<script src="assets/js/immo.js"></script>
-<!-- End Script -->
+-
 
 </body>
 </html>
