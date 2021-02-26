@@ -1,14 +1,5 @@
 <?php
-
-//connect to data base
-include("DashboardConf/db_connect.php");
-
-// Selct Data from db
-$sql = "SELECT * FROM property";
-
-$result_r = $conn->query($sql);
-$row = $result_r->fetch_assoc();
-
+include ('DashboardConf/db-read.php')
 
 ?>
 <!DOCTYPE html>
@@ -72,13 +63,13 @@ $row = $result_r->fetch_assoc();
                 <?php
                 if ($result_r->num_rows > 0) {
 
-                    while ($row) {
+                    while ($row = $result_r->fetch_assoc()) {
 
                         echo "
                 <tr>
                     <td>
 					<span class='custom-checkbox'>
-						<input type='checkbox' id='checkbox1' name='options[]' value='1'>
+						<input type='checkbox' id='checkbox1' name='options[]' value='".$row['id']."'>
 				    	<label for='checkbox1'></label>
 					</span>
                     </td>
@@ -159,10 +150,12 @@ $row = $result_r->fetch_assoc();
     </div>
 </div>
 
+<!--Edit Property-->
+
 <div id="editPropertyModal" class="modal fade">
     <div class="modal-dialog">
         <div class="modal-content">
-            <form action="DashboardConf/db-update.php?" method="POST">
+            <form action="DashboardConf/db-update.php?update" method="POST">
                 <div class="modal-header">
                     <h4 class="modal-title"> Edit Property </h4>
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
