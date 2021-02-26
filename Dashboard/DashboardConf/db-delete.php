@@ -3,27 +3,29 @@
 include("db_connect.php");
 
 session_start();
-$property_image = $_POST["Image_d"];
-$property_price = $_POST["Price_d"];
-$property_location = $_POST["Location_d"];
-$property_type = $_POST["Type_d"];
-$property_rate = $_POST["Rate_d"];
-$property_etat = $_POST["Etat_d"];
+
+$checkbox1 = $_POST['options'];
+
+$chk = "";
+
+foreach ($checkbox1 as $chk1) {
+    $chk .= $chk1 . ",";
+}
 
 
-$sql_d = "SELECT * FROM property WHERE img ='$property_image'";
+$sql_d = "SELECT * FROM property WHERE img ='$chk'";
 $res_d = mysqli_query($conn, $sql_d);
 
 if (mysqli_num_rows($res_d) == 0) {
 
     echo '<script>alert("This Property Does Not Exist To Delete!");
-                window.location = \'Dashboard.php\';
-</script>';
+                window.location = \'../Dashboard.php\';
+            </script>';
 
 
 } else {
 
-    $sql = "DELETE FROM property WHERE = $property_image";
+    $sql = "DELETE FROM property WHERE = $chk";
 
 
     if (mysqli_query($conn, $sql)) {
